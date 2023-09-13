@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+	</head>
+	<body>
+		<div id="app">
+			<video
+				controls
+				width="600"
+				poster="https://cdn.playable.video/free.playable.video/v:5338424109694976/0/5338424109694976/16:9/-/lowsrc.jpg"
+				loop
+				muted
+				playsinline
+			>
+				<source
+					src="https://cdn.playable.video/editor/5338424109694976/desktop-600x338-600:336:0:2.mp4"
+					type="video/mp4"
+				/>
+
+				Download the
+				<a href="https://cdn.playable.video/editor/5338424109694976/desktop-600x338-600:336:0:2.mp4">MP4</a>
+				video.
+			</video>
+			<dialog id="dialog">
+				<div class="content">
+					<p>Do you wish to continue playing the video?</p>
+					<menu>
+						<button value="default" id="continueBtn">Yes</button>
+						<button value="cancel" id="cancelBtn">No</button>
+					</menu>
+				</div>
+			</dialog>
+		</div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
